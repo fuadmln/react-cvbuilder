@@ -1,6 +1,7 @@
 import './styles/App.css'
 import FormPersonal from './components/FormPersonal';
 import FormEducation from './components/FormEducation';
+import FormExperience from './components/FormExperience';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <h1>CV Builder</h1>
       <FormPersonal />
       <FormEducation />
+      <FormExperience />
     </>
   )
 }

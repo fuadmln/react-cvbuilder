@@ -3,7 +3,7 @@ import '../styles/FormEducation.css';
 function FormEducation(){
    return (
       <div>
-         <h1>Add Education</h1>
+         <h2>Add Education</h2>
          <form>
             <div>
                <label htmlFor="inputDegree">Degree</label>
