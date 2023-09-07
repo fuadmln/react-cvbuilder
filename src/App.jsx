@@ -1,12 +1,13 @@
-import profile from './dummy-data.js';
+import data from './dummy-data.js';
 import './styles/App.css'
 import FormPersonal from './components/FormPersonal';
 import FormEducation from './components/FormEducation';
 import FormExperience from './components/FormExperience';
 import InfoPersonal from './components/InfoPersonal';
+import InfoEducation from './components/InfoEducation.jsx';
 
 function App() {
-  const {name, about, phone, email, address} = profile;
+  const {name, about, phone, email, address} = data.bio;
   return (
     <>
       <h1>CV Builder</h1>
@@ -20,6 +21,7 @@ function App() {
         email={email}
         address={address}
       />
+      <InfoEducation />
     </>
   )
 }
