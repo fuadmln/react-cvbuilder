@@ -3,8 +3,8 @@ import '../styles/FormPersonal.css'
 function PersonalForm(){
    return (
       <div>
+         <h2>Fill Personal Details</h2>
          <form >
-            <h2>Fill Personal Details</h2>
             <div>
                <label htmlFor="inputName">Full Name</label>
                <br />
