@@ -25,6 +25,11 @@ function PersonalForm(){
                <br />
                <input type="text" id="inputAddress" placeholder="I live at .." />
             </div>
+            <div>
+               <label htmlFor="inputAbout">About</label>
+               <br />
+               <textarea id="inputAbout" cols="30" rows="10" placeholder="describe your self"></textarea>
+            </div>
          </form>
       </div>
    );
