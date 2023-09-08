@@ -5,6 +5,7 @@ import FormEducation from './components/FormEducation';
 import FormExperience from './components/FormExperience';
 import InfoPersonal from './components/InfoPersonal';
 import InfoEducation from './components/InfoEducation.jsx';
+import InfoExperience from './components/InfoExperience.jsx';
 
 function App() {
   const {name, about, phone, email, address} = data.bio;
@@ -22,6 +23,7 @@ function App() {
         address={address}
       />
       <InfoEducation />
+      <InfoExperience />
     </>
   )
 }
