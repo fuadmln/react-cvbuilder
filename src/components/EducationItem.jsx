@@ -10,7 +10,7 @@ function EducationItem({institution, degree, major, yearIn, yearOut, location}){
 
    return(
       <div>
-         <h3>{institution}</h3>
+         <h3 style={{color: 'blue'}}>{institution}</h3>
          <div>{degree} {major}</div>
          <div>{yearIn} - {yearOut}</div>
          <div>{location}</div>

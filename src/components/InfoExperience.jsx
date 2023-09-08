@@ -5,7 +5,7 @@ import {experiences} from '../dummy-data.js';
 function InfoExperience(){
    return (
       <div>
-         <h2>Work Experiences</h2>
+         <h2 style={{textDecoration: 'underline'}}>Work Experiences</h2>
          <div>
             {experiences.toReversed().map((experience, index) => (
                <ExperienceItem

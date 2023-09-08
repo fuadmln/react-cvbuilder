@@ -5,7 +5,7 @@ import {educations} from '../dummy-data.js';
 function InfoEducation() {
    return (
       <div>
-         <h2>Educations</h2>
+         <h2 style={{textDecoration: 'underline'}}>Educations</h2>
          <div>
             {educations.toReversed().map((education, index) => (
                <EducationItem
