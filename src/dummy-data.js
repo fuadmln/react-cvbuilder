@@ -1,5 +1,4 @@
 const bio = {
-// export const bio = {
   name: 'Fuad Maulana',
   email: 'whereismy@email.com',
   phone: '+6281122334455',
@@ -8,7 +7,6 @@ const bio = {
 }
 
 const educations = [
-// export const educations = [
   {
     degree: 'school',
     institution: 'SMAN 1 Batam',
@@ -35,7 +33,24 @@ const educations = [
   }
 ];
 
+const experiences = [
+  {
+    position: 'Frontend Developer',
+    company: 'Facebook',
+    yearIn: '2015',
+    yearOut: '2019',
+    description: 'Sit amet consectetur adipisicing elit. Eum, blanditiis. Qui, nisi? Ex commodi totam nulla expedita, ipsam deleniti voluptatum, autem unde magnam, voluptatibus sapiente et aspernatur suscipit tempora vitae lorem ipsum dolor s.'
+  },
+  {
+    position: 'Backend Developer',
+    company: 'Tesla',
+    yearIn: '2020',
+    yearOut: '2022',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, blanditiis. Qui, nisi? Ex commodi totam nulla expedita, ipsam deleniti voluptatum, autem unde magnam, voluptatibus sapiente et aspernatur suscipit tempora vitae.'
+  }
+];
 
-export {bio, educations};
-export default {bio, educations};
+
+export {bio, educations, experiences};
+export default {bio, educations, experiences};
 
