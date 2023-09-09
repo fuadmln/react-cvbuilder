@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import '../styles/FormEducation.css';
 
-function FormEducation({education, setEducations}){
+function FormEducation({setEducations}){
    const [formData, setFormData] = useState({});
 
    const changeProperty = (e) => {
       const key = e.target.name;
       const value = e.target.value;
-      const education = {...formData, [key]: value};
-      setFormData(education);
+      setFormData({...formData, [key]: value});
    }
 
    const clickAdd = (e) => {

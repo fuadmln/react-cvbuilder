@@ -1,10 +1,10 @@
-function ExperienceItem({position, company, yearIn, yearOut, description}){
+function ExperienceItem({experience}){
    return(
       <div>
-         <h3 style={{color: 'blue'}}>{position}</h3>
-         <div>{company}</div>
-         <div>{yearIn} - {yearOut}</div>
-         <div>{description}</div>
+         <h3 style={{color: 'blue'}}>{experience.position}</h3>
+         <div>{experience.company}</div>
+         <div>{experience.yearIn} - {experience.yearOut}</div>
+         <div>{experience.description}</div>
       </div>
    );
 }

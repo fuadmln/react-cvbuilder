@@ -11,10 +11,12 @@ import { useEffect, useState } from 'react';
 function App() {
   const [profile, setProfile] = useState({});
   const [educations, setEducations] = useState([]);
+  const [experiences, setExperiences] = useState([]);
 
   useEffect(() => {
     setProfile(data.bio);
     setEducations(data.educations);
+    setExperiences(data.experiences);
   }, []);
 
   return (
@@ -23,13 +25,13 @@ function App() {
       <div className="wrapper">
         <div className="app__form">
           <FormPersonal profile={profile} setProfile={setProfile} />
-          <FormEducation educations={educations} setEducations={setEducations} />
-          <FormExperience />
+          <FormEducation setEducations={setEducations} />
+          <FormExperience setExperiences={setExperiences} />
         </div>
         <div className="app__info">
           <InfoPersonal profile={profile} />
           <InfoEducation educations={educations} />
-          <InfoExperience />
+          <InfoExperience experiences={experiences} />
         </div>
       </div>
     </>
