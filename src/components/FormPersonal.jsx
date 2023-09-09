@@ -2,8 +2,8 @@ import '../styles/FormPersonal.css'
 
 function PersonalForm({profile, setProfile}){
    const changeProperty = (e) => {
-      let key = e.target.name;
-      let value = e.target.value;
+      const key = e.target.name;
+      const value = e.target.value;
       setProfile({...profile, [key]: value});
    }
 
