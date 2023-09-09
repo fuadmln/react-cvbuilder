@@ -6,22 +6,22 @@ import FormExperience from './components/FormExperience';
 import InfoPersonal from './components/InfoPersonal';
 import InfoEducation from './components/InfoEducation.jsx';
 import InfoExperience from './components/InfoExperience.jsx';
+import { useEffect, useState } from 'react';
 
 function App() {
-  const {name, about, phone, email, address} = data.bio;
+  const [profile, setProfile] = useState({});
+
+  useEffect(() => {
+    setProfile(data.bio);
+  }, []);
+
   return (
     <>
       <h1>CV Builder</h1>
-      <FormPersonal />
+      <FormPersonal profile={profile} setProfile={setProfile} />
       <FormEducation />
       <FormExperience />
-      <InfoPersonal 
-        name={name}
-        about={about}
-        phone={phone}
-        email={email}
-        address={address}
-      />
+      <InfoPersonal profile={profile} />
       <InfoEducation />
       <InfoExperience />
     </>
