@@ -18,12 +18,18 @@ function App() {
   return (
     <>
       <h1>CV Builder</h1>
-      <FormPersonal profile={profile} setProfile={setProfile} />
-      <FormEducation />
-      <FormExperience />
-      <InfoPersonal profile={profile} />
-      <InfoEducation />
-      <InfoExperience />
+      <div className="wrapper">
+        <div className="app__form">
+          <FormPersonal profile={profile} setProfile={setProfile} />
+          <FormEducation />
+          <FormExperience />
+        </div>
+        <div className="app__info">
+          <InfoPersonal profile={profile} />
+          <InfoEducation />
+          <InfoExperience />
+        </div>
+      </div>
     </>
   )
 }

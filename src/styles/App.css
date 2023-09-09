@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+}
+
+.app__form {
+  min-width: 30%;
+}
+
+.app__info {
+}
