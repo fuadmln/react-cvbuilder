@@ -1,8 +1,7 @@
 import '../styles/InfoEducation.css'
 import EducationItem from './EducationItem';
-import {educations} from '../dummy-data.js';
 
-function InfoEducation() {
+function InfoEducation({educations}) {
    return (
       <div>
          <h2 style={{textDecoration: 'underline'}}>Educations</h2>
@@ -10,12 +9,7 @@ function InfoEducation() {
             {educations.toReversed().map((education, index) => (
                <EducationItem
                   key={`${education}-${index}`}
-                  institution={education.institution}
-                  degree={education.degree}
-                  major={education.major}
-                  yearIn={education.yearIn}
-                  yearOut={education.yearOut}
-                  location={education.location}
+                  education={education}
                />
             ))}
          </div>

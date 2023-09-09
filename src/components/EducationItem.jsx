@@ -1,19 +1,19 @@
-function EducationItem({institution, degree, major, yearIn, yearOut, location}){
+function EducationItem({education}){
    const degreeName = {
       school: '',
       diploma: 'Diploma\'s in ',
       bachelor: 'Bachelor\'s Degree in ',
       master: 'Master\'s Degree in '
    };
-
-   degree = degreeName[degree];
+   
+   education.degree = degreeName[education.degree];
 
    return(
       <div>
-         <h3 style={{color: 'blue'}}>{institution}</h3>
-         <div>{degree} {major}</div>
-         <div>{yearIn} - {yearOut}</div>
-         <div>{location}</div>
+         <h3 style={{color: 'blue'}}>{education.institution}</h3>
+         <div>{education.degree} {education.major}</div>
+         <div>{education.yearIn} - {education.yearOut}</div>
+         <div>{education.location}</div>
       </div>
    );
 }
