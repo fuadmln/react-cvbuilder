@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import FormEducationItem from './FormEducationItem';
 import '../styles/FormEducation.css';
 
-function FormEducation({setEducations}){
+function FormEducation({educations, setEducations}){
    const [formData, setFormData] = useState({});
 
    const changeProperty = (e) => {
@@ -12,7 +13,7 @@ function FormEducation({setEducations}){
 
    const clickAdd = (e) => {
       e.preventDefault();
-      setEducations((educations) => [...educations, formData]);
+      setEducations((educations) => [formData, ...educations]);
       setFormData({});
       document.getElementById('educationForm').reset();
    }
@@ -20,6 +21,7 @@ function FormEducation({setEducations}){
    return (
       <div>
          <h2>Add Education</h2>
+         <span>*from the most recent to oldest</span>
          <form id="educationForm">
             <div>
                <label htmlFor="inputDegree">Degree</label>
@@ -58,6 +60,11 @@ function FormEducation({setEducations}){
             </div>
             <button onClick={clickAdd}>Add</button>
          </form>
+         {educations && (
+            <div>
+               {educations.toReversed().map( education => <FormEducationItem key={education.id} education={education} setEducations={setEducations} /> )}  
+            </div>
+         )}
       </div>
    );
 }
