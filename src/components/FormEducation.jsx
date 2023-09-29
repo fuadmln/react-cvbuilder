@@ -6,9 +6,10 @@ function FormEducation({educations, setEducations}){
    const [formData, setFormData] = useState({});
 
    const changeProperty = (e) => {
+      const id = Date.now();
       const key = e.target.name;
       const value = e.target.value;
-      setFormData({...formData, [key]: value});
+      setFormData({...formData, [key]: value, id});
    }
 
    const clickAdd = (e) => {
