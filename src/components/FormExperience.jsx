@@ -1,18 +1,20 @@
 import { useState } from 'react';
+import FormExperienceItem from './FormExperienceItem';
 import '../styles/FormExperience.css'
 
-function FormExperience({setExperiences}){
+function FormExperience({experiences, setExperiences}){
    const [formData, setFormData] = useState({});
 
    const changeProperty = (e) => {
+      const id = Date.now();
       const key = e.target.name;
       const value = e.target.value;
-      setFormData({...formData, [key]: value});
+      setFormData({...formData, [key]: value, id});
    }
 
    const clickAdd = (e) => {
       e.preventDefault();
-      setExperiences((experiences) => [...experiences, formData]);
+      setExperiences((experiences) => [formData, ...experiences]);
       setFormData({});
       document.getElementById('experienceForm').reset();
    }
@@ -20,6 +22,7 @@ function FormExperience({setExperiences}){
    return (
       <div>
          <h2>Add Experience</h2>
+         <span>*from the most recent to oldest</span>
          <form id="experienceForm">
             <div>
                <label htmlFor="inputPosition">Position</label>
@@ -48,6 +51,12 @@ function FormExperience({setExperiences}){
             </div>
             <button onClick={clickAdd}>Add</button>
          </form>
+
+         {experiences && (
+            <div>
+               {experiences.toReversed().map( experience => <FormExperienceItem key={experience.id} experience={experience} setExperiences={setExperiences} /> )}
+            </div>
+         )}
       </div>
    );
 }

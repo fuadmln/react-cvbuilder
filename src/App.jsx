@@ -32,7 +32,7 @@ function App() {
           <FormReset setter={{setProfile, setEducations, setExperiences}} populateExample={populateExample} />
           <FormPersonal profile={profile} setProfile={setProfile} />
           <FormEducation educations={educations} setEducations={setEducations} />
-          <FormExperience setExperiences={setExperiences} />
+          <FormExperience experiences={experiences} setExperiences={setExperiences} />
         </div>
         <div className="app__info">
           <InfoPersonal profile={profile} />
