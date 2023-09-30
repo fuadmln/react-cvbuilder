@@ -3,19 +3,12 @@ const bio = {
   email: 'whereismy@email.com',
   phone: '+6281122334455',
   address: 'P. Sherman, 42 Wallaby Way, Sydney',
+  link: 'mysite.com',
+  linkedin: 'linkedin.com/in/fuadmln',
   about: 'Full Stack Developer is someone who not really good either as frontend or backend. On the frontend, they can\'t center a div. While being backend their code resembles a spaghetti factory that ready to blow the server.'
 }
 
 const educations = [
-  {
-    id: 2221,
-    degree: 'school',
-    institution: 'SMAN 1 Batam',
-    major: 'Natural Science',
-    yearIn: 2014,
-    yearOut: 2017,
-    location: 'Batam, Indonesia'
-  },
   {
     id: 2222,
     degree: 'bachelor',
@@ -40,7 +33,7 @@ const experiences = [
   {
     id: 3331,
     position: 'Frontend Developer',
-    company: 'Facebook',
+    company: 'Facebook Inc',
     yearIn: '2015',
     yearOut: '2019',
     description: 'Sit amet consectetur adipisicing elit. Eum, blanditiis. Qui, nisi? Ex commodi totam nulla expedita, ipsam deleniti voluptatum, autem unde magnam, voluptatibus sapiente et aspernatur suscipit tempora vitae lorem ipsum dolor s.'
@@ -48,7 +41,7 @@ const experiences = [
   {
     id: 3332,
     position: 'Backend Developer',
-    company: 'Tesla',
+    company: 'Tesla Inc',
     yearIn: '2020',
     yearOut: '2022',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, blanditiis. Qui, nisi? Ex commodi totam nulla expedita, ipsam deleniti voluptatum, autem unde magnam, voluptatibus sapiente et aspernatur suscipit tempora vitae.'
