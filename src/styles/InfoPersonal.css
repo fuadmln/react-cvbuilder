@@ -4,11 +4,37 @@
   font-size: 2.6rem;
 }
 
+.cv-personal p {
+  font-size: 12pt;
+}
+
 .cv-personal ul {
-  margin: 12px 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 5px;
+}
+
+.cv-personal ul::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 8pt 0;
+  background-color: #999;
 }
 
 .cv-personal li {
-  font-size: 0.9rem;
-  line-height: 1.2rem;
+  display: inline-flex;
+  margin-bottom: 4px;
+  font-size: 10pt;
+  line-height: 10pt;
+  list-style: none;
+}
+
+.cv-personal li svg {
+  margin-right: 4px;
 }

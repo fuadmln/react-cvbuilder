@@ -145,11 +145,21 @@ button.delete:hover {
 }
 
 .app__info {
+  /* a4 size */
+  width: 595pt;
+  height: 842pt;
   align-self: flex-start;
-  padding: 3.5rem 5rem;
+  padding: 32pt 32pt;
   margin-left: 3rem;
   margin-right: 3rem;
   border: 1px solid black;
+}
+
+.app__info p,
+.app__info li,
+.app__info h2,
+.app__info h3 {
+  font-family: "Segoe UI", sans-serif;
 }
 
 .form-personal,
@@ -201,11 +211,12 @@ button.delete:hover {
 
 .cv-education,
 .cv-experience {
-  margin-top: 1.8rem;
+  margin-top: 1.4rem;
 }
 
 .cv-education h2,
 .cv-experience h2 {
+  margin-top: 0;
   color: #1eaedb;
   text-transform: uppercase;
 }
