@@ -3,7 +3,15 @@ import '../styles/FormReset.css';
 function FormReset({setter, populateExample}){
    const {setProfile, setEducations, setExperiences} = setter;
    const resetHandler = () => {
-      setProfile({});
+      setProfile({
+         name: '',
+         email: '',
+         phone: '',
+         address: '',
+         about: '',
+         link: '',
+         linkedin: ''
+      });
       setEducations([]);
       setExperiences([]);
    }
