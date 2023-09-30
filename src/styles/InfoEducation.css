@@ -1,11 +1,8 @@
 .cv-education h3 {
-  /* color: #1eaedb; */
   text-decoration: underline;
 }
 
 .cv-education .major {
-  /* font-weight: bold; */
-  /* font-size: 1.1rem; */
   color: #db1eb2;
 }
 
@@ -16,6 +13,5 @@
 }
 
 .cv-education .location {
-  font-weight: 600;
   font-size: 0.9rem;
 }

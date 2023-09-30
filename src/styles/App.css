@@ -210,13 +210,24 @@ button.delete:hover {
   text-transform: uppercase;
 }
 
+.cv-education .item-header,
+.cv-experience .item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .cv-education h3,
 .cv-experience h3 {
-  margin-bottom: 5px;
+  margin: 0 0 6px;
   font-size: 1rem;
 }
 
-.cv-education .list div,
-.cv-experience .list div {
+.cv-education .list > div,
+.cv-experience .list > div {
   margin-bottom: 12px;
+}
+
+.cv-education .list p,
+.cv-experience .list p {
+  line-height: 1.2rem;
 }

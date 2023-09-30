@@ -10,9 +10,11 @@ function EducationItem({education}){
 
    return(
       <div>
-         <h3>{education.institution}</h3>
+         <div className="item-header">
+            <h3>{education.institution}</h3>
+            <p className="date">{education.yearIn} - {education.yearOut}</p>
+         </div>
          <p className="major">{education.degree} {education.major}</p>
-         <p className="date">{education.yearIn} - {education.yearOut}</p>
          <p className="location">{education.location}</p>
       </div>
    );
