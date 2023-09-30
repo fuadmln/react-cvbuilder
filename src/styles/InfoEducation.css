@@ -1,0 +1,21 @@
+.cv-education h3 {
+  /* color: #1eaedb; */
+  text-decoration: underline;
+}
+
+.cv-education .major {
+  /* font-weight: bold; */
+  /* font-size: 1.1rem; */
+  color: #db1eb2;
+}
+
+.cv-education .date {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.cv-education .location {
+  font-weight: 600;
+  font-size: 0.9rem;
+}

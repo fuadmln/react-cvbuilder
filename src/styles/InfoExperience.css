@@ -1,0 +1,20 @@
+.cv-experience h3 {
+  /* color: #1eaedb; */
+  text-decoration: underline;
+}
+
+.cv-experience .company {
+  /* font-weight: bold; */
+  color: #db1eb2;
+}
+
+.cv-experience .date {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.cv-experience .description {
+  margin-top: 6px;
+  text-align: justify;
+  color: #666;
+}

@@ -1,0 +1,14 @@
+.cv-personal h2 {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+.cv-personal ul {
+  margin: 12px 0;
+}
+
+.cv-personal li {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
