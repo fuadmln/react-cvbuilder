@@ -1,5 +1,6 @@
 import data from './dummy-data.js';
 import './styles/App.css'
+import Header from './components/Header'
 import FormPersonal from './components/FormPersonal';
 import FormEducation from './components/FormEducation';
 import FormExperience from './components/FormExperience';
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <>
-      <h1>CV Builder</h1>
+      <Header />
       <div className="wrapper">
         <div className="app__form">
           <FormReset setter={{setProfile, setEducations, setExperiences}} populateExample={populateExample} />
