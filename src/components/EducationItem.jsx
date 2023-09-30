@@ -10,10 +10,10 @@ function EducationItem({education}){
 
    return(
       <div>
-         <h3 style={{color: 'blue'}}>{education.institution}</h3>
-         <div>{education.degree} {education.major}</div>
-         <div>{education.yearIn} - {education.yearOut}</div>
-         <div>{education.location}</div>
+         <h3>{education.institution}</h3>
+         <p className="major">{education.degree} {education.major}</p>
+         <p className="date">{education.yearIn} - {education.yearOut}</p>
+         <p className="location">{education.location}</p>
       </div>
    );
 }

@@ -8,7 +8,7 @@ function PersonalForm({profile, setProfile}){
    }
 
    return (
-      <div>
+      <div className="form-personal">
          <h2>Fill Personal Details</h2>
          <form >
             <div>

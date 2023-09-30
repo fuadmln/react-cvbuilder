@@ -20,9 +20,9 @@ function FormExperience({experiences, setExperiences}){
    }
 
    return (
-      <div>
+      <div className="form-experience">
          <h2>Add Experience</h2>
-         <span>*from the most recent to oldest</span>
+         <p className="text-helper" >*from the most recent to oldest</p>
          <form id="experienceForm">
             <div>
                <label htmlFor="inputPosition">Position</label>
@@ -49,11 +49,11 @@ function FormExperience({experiences, setExperiences}){
                <br />
                <textarea id="inputDescription" name="description" cols="30" rows="10" placeholder="write the job description" onBlur={changeProperty}></textarea>
             </div>
-            <button onClick={clickAdd}>Add</button>
+            <button className="primary" onClick={clickAdd}>Add</button>
          </form>
 
          {experiences && (
-            <div>
+            <div className="experience-list">
                {experiences.toReversed().map( experience => <FormExperienceItem key={experience.id} experience={experience} setExperiences={setExperiences} /> )}
             </div>
          )}

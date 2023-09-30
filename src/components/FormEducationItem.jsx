@@ -8,7 +8,7 @@ function FormEducationItem({education, setEducations}){
    return(
       <div>
          <span>{education.institution}</span>
-         <button onClick={() => deleteHandler(education.id)} style={{marginLeft: '6px'}}>delete</button>
+         <button className="small delete" onClick={() => deleteHandler(education.id)} style={{marginLeft: '6px'}}>delete</button>
       </div>
    );
 }

@@ -11,11 +11,11 @@ function FormReset({setter, populateExample}){
    const removeExperiencesHandler = () => { setExperiences([]) }
 
    return (
-      <div>
-         <button style={{borderColor: 'red'}} onClick={resetHandler}>Reset</button>
-         <button style={{borderColor: 'red'}} onClick={removeEducationsHandler}>Remove Educations</button>
-         <button style={{borderColor: 'red'}} onClick={removeExperiencesHandler}>Remove Experiences</button>
-         <button style={{color: 'blue'}} onClick={populateExample}>Populate Example</button>
+      <div className="form-action">
+         <button className="primary" onClick={populateExample}>Populate Example</button>
+         <button className="delete" onClick={resetHandler}>Reset</button>
+         <button className="delete" onClick={removeEducationsHandler}>Remove Educations</button>
+         <button className="delete" onClick={removeExperiencesHandler}>Remove Experiences</button>
       </div>
    );
 }

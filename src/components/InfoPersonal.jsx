@@ -2,7 +2,7 @@ import '../styles/InfoPersonal.css';
 
 function InfoPersonal({profile}){
    return(
-      <div>
+      <div className="cv-personal">
          <h2>{profile.name}</h2>
          <p>{profile.about}</p>
          <ul>

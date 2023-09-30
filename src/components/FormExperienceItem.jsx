@@ -7,8 +7,8 @@ function FormExperienceItem({experience, setExperiences}){
 
    return(
       <div>
-         <span>{experience.company}</span>
-         <button onClick={() => deleteHandler(experience.id)} style={{marginLeft: '6px'}}>delete</button>
+         <span>{experience.company} - {experience.position}</span>
+         <button className="small delete" onClick={() => deleteHandler(experience.id)} style={{marginLeft: '6px'}}>delete</button>
       </div>
    );
 }

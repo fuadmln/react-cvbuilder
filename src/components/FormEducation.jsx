@@ -20,9 +20,9 @@ function FormEducation({educations, setEducations}){
    }
 
    return (
-      <div>
+      <div className="form-education">
          <h2>Add Education</h2>
-         <span>*from the most recent to oldest</span>
+         <p className="text-helper">*from the most recent to oldest</p>
          <form id="educationForm">
             <div>
                <label htmlFor="inputDegree">Degree</label>
@@ -59,10 +59,10 @@ function FormEducation({educations, setEducations}){
                <br />
                <input type="text" id="inputLocation" name="location" placeholder="city, nation" onBlur={changeProperty} />
             </div>
-            <button onClick={clickAdd}>Add</button>
+            <button className="primary" onClick={clickAdd}>Add</button>
          </form>
          {educations && (
-            <div>
+            <div className="education-list">
                {educations.toReversed().map( education => <FormEducationItem key={education.id} education={education} setEducations={setEducations} /> )}  
             </div>
          )}

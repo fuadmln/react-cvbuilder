@@ -3,9 +3,9 @@ import ExperienceItem from './ExperienceItem';
 
 function InfoExperience({experiences}){
    return (
-      <div>
-         <h2 style={{textDecoration: 'underline'}}>Work Experiences</h2>
-         <div>
+      <div className="cv-experience">
+         <h2>Work Experiences</h2>
+         <div className="list">
             {experiences.toReversed().map((experience, index) => (
                <ExperienceItem
                   key={`${experience.yearIn}-${index}`}

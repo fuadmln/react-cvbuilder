@@ -3,9 +3,9 @@ import EducationItem from './EducationItem';
 
 function InfoEducation({educations}) {
    return (
-      <div>
-         <h2 style={{textDecoration: 'underline'}}>Educations</h2>
-         <div>
+      <div className="cv-education">
+         <h2>Educations</h2>
+         <div className="list">
             {educations.toReversed().map((education, index) => (
                <EducationItem
                   key={`${education}-${index}`}
