@@ -2,6 +2,11 @@
 
 This project is part of [The Odin Project](https://www.theodinproject.com/) assignmenet when taking React course in Fullstack Javascipt Path.
 
+## Links
+
+[Demo](https://react-cv-builder-716da.web.app)<br>
+[Source Code Repository](https://github.com/fuadmln/react-cvbuilder)
+
 ## Project Instructions
 
 1. Create a new React project.
