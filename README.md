@@ -2,6 +2,8 @@
 
 This project is part of [The Odin Project](https://www.theodinproject.com/) assignmenet when taking React course in Fullstack Javascipt Path.
 
+![UI Preview](preview.png)
+
 ## Links
 
 [Demo](https://react-cv-builder-716da.web.app)<br>
