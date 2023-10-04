@@ -20,3 +20,23 @@ This project is part of [The Odin Project](https://www.theodinproject.com/) assi
 4. Create a **components** directory under your **src** directory and add your components.
 5. Include a **styles** directory under your **src** directory for your CSS files. You’ll need to import these in the component files to use them.
 6. Push the results and deploy them with any of the options mentioned below!
+
+## Installation & Setup
+
+Install once
+
+1. Clone or download repo
+   ```sh
+   git clone https://github.com/fuadmln/react-cvbuilder.git
+   ```
+1. Extract and open project in terminal
+1. Install package
+   ```sh
+   npm install
+   ```
+
+Run Locally
+
+```sh
+npm run dev
+```
